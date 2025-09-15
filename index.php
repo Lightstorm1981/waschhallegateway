@@ -19,7 +19,7 @@ try {
     }
 
     // Weiterleitung an Ihren Server
-    $target_url = "http://87.138.159.219:83/guthaben.php?kartennummer=" . urlencode($kartennummer) . "&email=" . urlencode($email);
+    $target_url = "http://87.138.159.219:83/guthaben-shopify.php?kartennummer=" . urlencode($kartennummer) . "&email=" . urlencode($email);
 
     $context = stream_context_create([
         'http' => [
