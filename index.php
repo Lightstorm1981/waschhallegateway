@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 
 // Nur guthaben-abfragen.php erlauben
 $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-if ($path !== '/guthaben-abfragen.php') {
+if ($path !== '/guthaben.php') {
     http_response_code(404);
     echo "Zugriff verweigert";
     exit;
